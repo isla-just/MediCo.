@@ -23,6 +23,7 @@ a{
     width: 50%;
     height: 100vh;
     float: left;
+    overflow: hidden;
 }
 .logo{
     height: auto;
@@ -98,6 +99,13 @@ margin-right: 20%;
 -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
 }
 
+.btn:hover{
+background-color: #F7F7FF;
+        border:2px solid #6C79DB;
+        color: #6C79DB;
+
+}
+
 .new{
     text-align: center;
     font-size: 12px;
@@ -126,6 +134,11 @@ margin-right: 20%;
 -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
 }
 
+.inactive-btn:hover{
+    background-color: #F7F7FF;
+        border:3px solid #6C79DB;
+}
+
 .btn-active{
     margin-right: 30px;
     margin-top: 50px;
@@ -144,4 +157,12 @@ margin-right: 20%;
     box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
 -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
 -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+}
+
+.illustration{
+    padding: 50px;
+    width: 600px;
+    height: auto;
+    margin-top: 120px;
+    margin-left: 120px;
 }

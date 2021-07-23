@@ -17,6 +17,7 @@
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/register.js"></script>
     <link rel="stylesheet" href="../css/register.css">
 
     <!--link font selection - choose font-->
@@ -32,43 +33,95 @@
         <h1 class="mainText">REGISTRATION</h1>
         <div class="wizard-row">
             <div class="line"></div>
-            <div class='circle'>1</div>
-            <div class="description">Details</div>
+            <div class='circle circle1'>1</div>
+            <div class="description describe1">Details</div>
 
             <div class="line" style="margin-left:20px; opacity: 0.7;"></div>
-            <div class='circle' style="opacity: 0.7;">2</div>
-            <div class="description" style="opacity: 0.7;">Account</div>
+            <div class='circle circle2' style="opacity: 0.7;">2</div>
+            <div class="description describe2" style="opacity: 0.7;">Account</div>
 
             <div class="line" style="margin-left:20px; opacity: 0.7;"></div>
-            <div class='circle' style="opacity: 0.7;">3</div>
-            <div class="description" style="opacity: 0.7;">Personal</div>
+            <div class='circle circle3' style="opacity: 0.7;">3</div>
+            <div class="description describe3" style="opacity: 0.7;">Personal</div>
 
         </div><!--wizard row-->
 
-        <h4 class="input-labels">Full name</h4>
-        <input class="login-input">
+        <div class="firstStep">
 
-        <div class="row">
-            <div class="half">
-                 <h4 class="input-labels" style="margin-left: 0;">Birthdate</h4>
-            <input class="login-input-half" placeholder="00 | 00 | 0000">
+    <h4 class="input-labels">Full name</h4>
+            <input class="login-input">
+
+            <div class="row">
+                <div class="half">
+                    <h4 class="input-labels" style="margin-left: 0;">Birthdate</h4>
+                <input class="login-input-half" placeholder="00 | 00 | 0000">
+                </div>
+
+                <div class="half" style="margin-left: -15%;">
+                    <h4 class="input-labels" style="margin-left: 0;">Gender</h4>
+            <select class="gender-input-half">  <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            </div>
+            
             </div>
 
-            <div class="half" style="margin-left: -18.5%;">
-                <h4 class="input-labels" style="margin-left: 0;">Gender</h4>
-           <input class="login-input-half" >
-           </div>
-           
+            <h4 class="input-labels">Phone number</h4>
+            <input class="login-input" placeholder="+27 00 000 0000">
+            <p class="nextText">Moving on</p>
+            
+            <div class="circle nextStep" style="margin-left: 650px; margin-top: -36px; padding: 10px;"><img src="../assets/Path 21.svg"></img></div>
+
+        </div><!--first step-->
+
+        <div class="secondStep">
+
+    <h4 class="input-labels">Email</h4>
+    <input class="login-input">
+
+    <div class="row">
+        <div class="half">
+            <h4 class="input-labels" style="margin-left: 0;">Password</h4>
+        <input class="login-input-half" type="password">
         </div>
 
-        <h4 class="input-labels">Phone number</h4>
-        <input class="login-input" placeholder="+24 00 000 0000">
+        <div class="half" style="margin-left: -15%;">
+            <h4 class="input-labels" style="margin-left: 0;">Confirm</h4>
+            <input class="login-input-half" type="password">
+    </div>
+    
+    </div>
 
+    <h4 class="input-labels">Phone number</h4>
+    <select class="rank-input">
+        <option>Head Receptionist</option>
+        <option>Regular Receptionist</option>
+        <option>Trainee</option>
+
+    </select>
+    <p class="nextText">Moving on</p>
+    
+    <div class="circle nextUp2" style="margin-left: 650px; margin-top: -36px; padding: 10px;"><img src="../assets/Path 21.svg"></img></div>
+        </div><!--secondz-->
+
+        <div class="thirdStep">
+            <h4 class="input-labels">Select a profile picture to upload</h4>
+            <div class="container">
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+            </div>
+
+                   <!-- if valid then submit-->
+        <a href="../index.html"><div class="btn btnStyling">Confirm Details</div></a>
+          
+        </div><!--third-step-->
         </div><!--half1-->
 
         <div class='half2'>
             <a href="./register.html"><div class="btn-active">Register</div></a>
             <a href="./login.html"><div class="inactive-btn">Sign in</div></a>
+
+            <div class='illustration'><img src="../assets/receptionist.png" width="600px"></div>
         </div><!--half2-->
        
     </body>
