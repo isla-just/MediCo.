@@ -49,6 +49,20 @@ a{
     font-weight: 700;
 }
 
+.error-block{
+
+    width: 60%; 
+    height: auto;
+ 
+   color: #FF6174;
+    margin-left: 20%;
+     margin-top: 20px;
+     padding: 5px;
+     background-color: #F7F7FF;
+     font-weight: bold;
+     font-size: 12px;
+ }
+
 .login-input{
     background-color: white;
     height: 50px;
@@ -165,4 +179,88 @@ background-color: #F7F7FF;
     height: auto;
     margin-top: 120px;
     margin-left: 120px;
+}
+
+.popup{
+    background-color:rgba(0, 0, 0, 0.363);
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+}
+
+.sure{
+    background-color:white;
+    width:22%;
+    margin-left: 39%;
+    height:56vh;
+    margin-top:22vh;
+    border-radius: 30px;
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    padding:3%;
+}
+
+.sure h3{
+    color: #6C79DB;
+    text-align: center;
+    width:100%;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+
+.sure p{
+    color: #6C79DB;
+    text-align: center;
+    width:100%;
+    margin-top: 60px;
+}
+
+.confirmDelete{
+    width: 80%;
+    height: 40px;
+    padding: 7px;
+    color: white;
+    background-color: #FF6174;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 60px;
+    border: none;
+    margin-left:10%;
+
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+}
+
+
+.sendConfirmation{
+
+    width: 100%;
+    height: 40px;
+    padding: 7px;
+    color: white;
+    background-color: #FF6174;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+
+}
+
+.illustration2{
+    width:81%;
+    height:240px;
+    margin-top: 40px;
+    float: left;
+    background-image: url(../assets/illustration2.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
 }

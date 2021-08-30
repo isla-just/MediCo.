@@ -18,6 +18,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .vert-nav{
     width: 10%;
     height:100vh;
@@ -56,6 +60,7 @@ left: 7.6%;
     height: auto;
     margin-left: 55px;
     margin-top: 190px;
+    opacity: 0.7;
 }
 
 .profile{
@@ -63,7 +68,7 @@ left: 7.6%;
     height: auto;
     margin-left: 55px;
     margin-top: 150px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .profile:hover{
@@ -117,7 +122,7 @@ left: 7.6%;
     width: 100%;
     border-radius: 10px;
     border:none;
-    padding-left: 60px;
+    padding-left: 20px;
     color: #42497C;
     font-size: 16px;
 
@@ -126,14 +131,69 @@ left: 7.6%;
 -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
 }
 
-.search-container{
-    width: 20px;
-    height: auto;
-position:absolute;
-top:8.5%;
-left: 14.7%;
+.search::placeholder{
+    color:#42497C;
 }
 
+.search-container{
+    background-color: #DEE0F9;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    padding-left:4px;
+    padding-top:2px;
+position:absolute;
+top:7.7%;
+left: 67%;
+border:none;
+}
+
+.endOfSearch{
+    background-color: #6C79DB;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border:none;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    padding-top: 14px;
+
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+text-align: center;
+margin-bottom: 10px;
+}
+
+.showAll{
+    width: 24%;
+    height: 40px;
+    padding: 7px;
+    color: white;
+    background-color: #FF6174;
+    text-align: center;
+    border-radius: 30px;
+margin-left:38%;
+    border: none;
+
+
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+}
+
+.delete{
+    background-color:#FF6174;
+    height: 40px;
+    width: 40px;
+    float: left;
+    border-radius: 6px;
+    padding:8px;
+    margin-left: 10px;
+}
 .goodMorningBlock{
     background-color: white;
     height: auto;
@@ -171,7 +231,7 @@ left: 14.7%;
 }
 
 .titles{
-    width: 25%;
+    width: 20%;
     float: left;
     margin-top: 15px;
     color: #42497C;
@@ -181,8 +241,16 @@ left: 14.7%;
 
 .appointments{
     width: 100%;
-    height: 565px;
+    height: 400px;
     overflow: scroll;
+    padding: 10px;
+}
+
+.banned{
+    width: 100%;
+    height: 116px;
+    overflow: scroll;
+    padding: 10px;
 }
 
 .appointment{
@@ -211,7 +279,7 @@ left: 14.7%;
 
 
 .labels1{
-    width: 20%;
+    width: 22%;
     float: left;
     margin-top: 10px;
     color: #42497C;
@@ -219,30 +287,30 @@ left: 14.7%;
 }
 
 .labels2{
-    width: 25%;
+    width: 22%;
     float: left;
     margin-top: 10px;
     color: #42497C;
 }
 
 .labels3{
-    width: 25%;
+    width: 20%;
     float: left;
     margin-top: 10px;
     color: #42497C;
-
+    margin-left:20px;
 
 }
 
 .labels4{
-    width: 25%;
+    width: 22%;
     float: left;
     margin-top: 10px;
     color: #42497C;
 }
 
 .labels5{
-    width: 25%;
+    width: 20%;
     float: left;
     margin-top: 10px;
     color: #42497C;
@@ -261,6 +329,46 @@ left: 14.7%;
 
 margin:auto;
 }
+
+.activeAppointment{
+    background-color:#DEE0F9;
+}
+
+.appointment-row{
+    width:100%;
+    height:auto;
+    }
+    
+    .appointment2{
+        background-color: white;
+        height: 50px;
+        width: 90%;
+        border-radius: 10px;
+        border:none;
+        padding: 5px;
+        color: #42497C;
+        font-size: 16px;
+        margin-top: 15px;
+        float: left;
+    
+        box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    }
+    
+    .banbtn{
+        background-color:#42497C;
+        height: 50px;
+        width: 9%;
+        float: left;
+        border-radius: 10px;
+        padding:14px;
+        margin-left: 10px;
+        margin-top: 15px;
+        color:white;
+        text-decoration: none;
+        text-align: center;
+    }
 
 .section2 h2{
     font-weight: 600;
@@ -371,13 +479,17 @@ color: white;
     border:none;
     padding: 20px;
     color: #42497C;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 7.5%;
     margin-top: 5px;
 
     box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
 -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
 -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+}
+
+.newBooking::placeholder{
+    color: #42497C;
 }
 
 .add{
@@ -406,5 +518,160 @@ left: 200px;
     background-color: #FF6174;
     text-align: center;
     border-radius: 30px;
-    margin:auto;
+   margin-left: 150px;
+    border: none;
 }
+
+.errorBlock{
+    width: 60%; 
+    height: auto;
+ 
+   color: #FF6174;
+    margin-left: 20%;
+     margin-top: 10px;
+     padding: 5px;
+     font-weight: 600;
+     font-size: 12px;
+     text-align: center;
+}
+
+.popup{
+    background-color:rgba(0, 0, 0, 0.363);
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+}
+
+.sure{
+    background-color:white;
+    width:22%;
+    margin-left: 39%;
+    height:56vh;
+    margin-top:22vh;
+    border-radius: 30px;
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    padding:3%;
+}
+
+.sure h3{
+    color: #6C79DB;
+    text-align: center;
+    width:100%;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+
+.sure p{
+    color: #6C79DB;
+    text-align: center;
+    width:100%;
+    margin-top: 60px;
+}
+
+.confirmDelete{
+    width: 80%;
+    height: 40px;
+    padding: 7px;
+    color: white;
+    background-color: #FF6174;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 60px;
+    border: none;
+    margin-left:10%;
+
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+}
+
+
+.sendConfirmation{
+
+    width: 100%;
+    height: auto;
+    padding: 7px;
+    color: white;
+    background-color: #FF6174;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+
+    box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+
+}
+
+.sendConfirmation:hover{
+
+    width: 100%;
+    height: auto;
+    padding: 7px;
+    color: #FF6174;
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    border: 2px solid #FF6174;
+    text-decoration: none;
+
+}
+
+.illustration2{
+    width:81%;
+    height:240px;
+    margin-top: 40px;
+    float: left;
+    background-image: url(../assets/illustration2.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+#custom-file-input::-webkit-file-upload-button{
+    background-color:transparent;
+    color:transparent;
+    border:none;
+ }
+ 
+ #custom-file-input::before{
+    content: 'Change profile picture';
+     height:30px;
+     width: 30px;
+     border-radius: 8px;
+     background-color: transparent;
+ color:#42497C;
+     border:none;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ 
+ #custom-file-input{
+    height: 40px !important;
+    width: 40% !important;
+
+     padding-left:12px !important;
+     padding-top:7px !important;
+
+     background-color: #F7F7FF;
+     border-radius: 10px;
+     color:transparent;
+     border: none;
+     margin-left: -20px;
+     margin-top: 5px !important;
+     /* margin:-70px 0 0 175px !important; */
+     box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+     -webkit-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+     -moz-box-shadow: 0px 1px 13px 0px rgba(0,0,0,0.1);
+ }
+
